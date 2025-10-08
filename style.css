@@ -1,47 +1,17 @@
-/* Style the sidebar - fixed full height */
-.sidebar {
-  height: 100%;
-  width: 160px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  overflow-x: hidden;
-  padding-top: 16px;
-  border-right: solid 0.5px;
-  border-color: lightgray;
+.heading {
+    font-family: 'Brush Script MT', cursive;
+    text-align: center;
+    margin: 5px;
 }
 
-/* Style sidebar links */
-.sidebar a {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 20px;
-  color: black;
-  display: block;
+.nav-item .nav-link  {
+    border-radius: 15px;
 }
 
-/* Style links on mouse-over */
-.sidebar a:hover {
-  background-color: rgb(185, 224, 185);
-  color: black;
-}
-
-.sidebar a.active{
-  background-color: green;
-  color: white;
-}
-
-/* Style the main content */
-.main {
-  margin-left: 160px; /* Same as the width of the sidenav */
-  padding: 0px 10px;
-}
-
-/* Add media queries for small screens (when the height of the screen is less than 450px, add a smaller padding and font-size) */
-@media screen and (max-height: 450px) {
-  .sidebar {padding-top: 15px;}
-  .sidebar a {font-size: 18px;}
+.nav-item:hover .nav-link:hover  {
+    background-color: white;
+    color: black;
+    border-radius: 15px;
 }
 
 .expense-note {
